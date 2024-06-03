@@ -894,6 +894,14 @@ static inline void initConstantsOther(Napi::Env env, Napi::Object exports) {
 	JS_GL_CONSTANT(TRUE);
 }
 
+static inline void initMultisampleBindings(Napi::Env env, Napi::Object exports) {
+	JS_GL_CONSTANT(MULTISAMPLE);
+	JS_GL_CONSTANT(TEXTURE_2D_MULTISAMPLE);
+	JS_GL_CONSTANT(TEXTURE_2D_MULTISAMPLE_ARRAY);
+
+	JS_GL_SET_METHOD(texImage2DMultisample);
+}
+
 
 Napi::Object initModule(Napi::Env env, Napi::Object exports) {
 	initMethods(env, exports);
@@ -901,6 +909,8 @@ Napi::Object initModule(Napi::Env env, Napi::Object exports) {
 	initConstantsWebgl103(env, exports);
 	initConstantsWebgl200(env, exports);
 	initConstantsOther(env, exports);
+
+	initMultisampleBindings(env, exports);
 	
 	return exports;
 }

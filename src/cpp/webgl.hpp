@@ -130,6 +130,7 @@ namespace webgl {
 	DBG_EXPORT JS_METHOD(generateMipmap);
 	DBG_EXPORT JS_METHOD(getTexParameter);
 	DBG_EXPORT JS_METHOD(texImage2D);
+	DBG_EXPORT JS_METHOD(texImage2DMultisample);
 	DBG_EXPORT JS_METHOD(texImage3D);
 	DBG_EXPORT JS_METHOD(texParameterf);
 	DBG_EXPORT JS_METHOD(texParameteri);
