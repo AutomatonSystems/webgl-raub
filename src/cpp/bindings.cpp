@@ -129,6 +129,10 @@ static inline void initMethods(Napi::Env env, Napi::Object exports) {
 	JS_GL_SET_METHOD(getUniformBlockIndex);
 	JS_GL_SET_METHOD(getUniformIndices);
 	
+	// Compute
+	JS_GL_SET_METHOD(dispatchCompute);
+	JS_GL_SET_METHOD(memoryBarrier);
+
 	// Draw
 	JS_GL_SET_METHOD(drawArrays);
 	JS_GL_SET_METHOD(drawElements);

@@ -276,6 +276,10 @@ namespace webgl {
 	DBG_EXPORT JS_METHOD(scissor);
 	DBG_EXPORT JS_METHOD(viewport);
 	DBG_EXPORT JS_METHOD(getIndexedParameter);
+
+	// Compute
+	DBG_EXPORT JS_METHOD(dispatchCompute);
+	DBG_EXPORT JS_METHOD(memoryBarrier);
 } // namespace webgl
 
 #endif /* _WEBGL_HPP_ */

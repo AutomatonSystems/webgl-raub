@@ -1157,4 +1157,15 @@ declare module "webgl-raub" {
 	const MAX_ELEMENT_INDEX: number;
 	const TEXTURE_IMMUTABLE_LEVELS: number;
 	const TIMEOUT_IGNORED: number;
+
+	// compute
+	const dispatchCompute: (
+		x: number,
+		y: number,
+		z: number
+	) => void;
+
+	const memoryBarrier: (
+		flags: number
+	) => void;
 }
