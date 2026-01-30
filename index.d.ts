@@ -139,7 +139,7 @@ declare module "webgl-raub" {
 	) => void;
 	const bufferData: (
 		target: number,
-		value: number | number[] | Float32Array | Uint16Array,
+		value: number | number[] | Float32Array | Int32Array | Uint16Array,
 		usage: number,
 		srcOffset?: number,
 		length?: number,
@@ -430,6 +430,7 @@ declare module "webgl-raub" {
 	const depthMask: (flag: boolean) => void;
 	const depthRange: (zNear: number, zFar: number) => void;
 	const disable: (id: number) => void;
+	const disablei: (id: number, index: number) => void;
 	const drawArrays: (
 		mode: number,
 		first: number,
@@ -443,6 +444,7 @@ declare module "webgl-raub" {
 	) => void;
 	const drawBuffers: (buffers: number[]) => void;
 	const enable: (id: number) => void;
+	const enablei: (id: number, index: number) => void;
 	const finish: () => void;
 	const flush: () => void;
 	const frontFace: (id: number) => void;
@@ -910,6 +912,7 @@ declare module "webgl-raub" {
 	const FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL: number;
 	const FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE: number;
 	const COLOR: number;
+	const COLOR_ATTACHMENT_INDEX: number;
 	const COLOR_ATTACHMENT0: number;
 	const COLOR_ATTACHMENT1: number;
 	const COLOR_ATTACHMENT2: number;
@@ -926,6 +929,7 @@ declare module "webgl-raub" {
 	const COLOR_ATTACHMENT13: number;
 	const COLOR_ATTACHMENT14: number;
 	const COLOR_ATTACHMENT15: number;
+	const DATA_ATTACHMENT_INDEX: number;
 	const DEPTH_ATTACHMENT: number;
 	const STENCIL_ATTACHMENT: number;
 	const DEPTH_STENCIL_ATTACHMENT: number;

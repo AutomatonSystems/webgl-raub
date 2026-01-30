@@ -257,7 +257,9 @@ namespace webgl {
 	DBG_EXPORT JS_METHOD(depthMask);
 	DBG_EXPORT JS_METHOD(depthRange);
 	DBG_EXPORT JS_METHOD(disable);
+	DBG_EXPORT JS_METHOD(disablei);
 	DBG_EXPORT JS_METHOD(enable);
+	DBG_EXPORT JS_METHOD(enablei);
 	DBG_EXPORT JS_METHOD(finish);
 	DBG_EXPORT JS_METHOD(flush);
 	DBG_EXPORT JS_METHOD(frontFace);

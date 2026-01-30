@@ -73,11 +73,27 @@ DBG_EXPORT JS_METHOD(disable) { NAPI_ENV;
 	RET_UNDEFINED;
 }
 
+DBG_EXPORT JS_METHOD(disablei) { NAPI_ENV;
+	REQ_INT32_ARG(0, id);
+	REQ_INT32_ARG(1, index);
+	
+	glDisablei(id, index);
+	RET_UNDEFINED;
+}
+
 
 DBG_EXPORT JS_METHOD(enable) { NAPI_ENV;
 	REQ_INT32_ARG(0, id);
 	
 	glEnable(id);
+	RET_UNDEFINED;
+}
+
+DBG_EXPORT JS_METHOD(enablei) { NAPI_ENV;
+	REQ_INT32_ARG(0, id);
+	REQ_INT32_ARG(1, index);
+	
+	glEnable(id, index);
 	RET_UNDEFINED;
 }
 

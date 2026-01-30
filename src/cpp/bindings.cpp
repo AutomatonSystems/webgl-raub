@@ -276,7 +276,9 @@ static inline void initMethods(Napi::Env env, Napi::Object exports) {
 	JS_GL_SET_METHOD(depthMask);
 	JS_GL_SET_METHOD(depthRange);
 	JS_GL_SET_METHOD(disable);
+	JS_GL_SET_METHOD(disablei);
 	JS_GL_SET_METHOD(enable);
+	JS_GL_SET_METHOD(enablei);
 	JS_GL_SET_METHOD(finish);
 	JS_GL_SET_METHOD(flush);
 	JS_GL_SET_METHOD(frontFace);
