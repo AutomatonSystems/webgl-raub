@@ -130,6 +130,7 @@ namespace webgl {
 	DBG_EXPORT JS_METHOD(generateMipmap);
 	DBG_EXPORT JS_METHOD(getTexParameter);
 	DBG_EXPORT JS_METHOD(texImage2D);
+	DBG_EXPORT JS_METHOD(texImage2DMultisample);
 	DBG_EXPORT JS_METHOD(texImage3D);
 	DBG_EXPORT JS_METHOD(texParameterf);
 	DBG_EXPORT JS_METHOD(texParameteri);
@@ -256,7 +257,9 @@ namespace webgl {
 	DBG_EXPORT JS_METHOD(depthMask);
 	DBG_EXPORT JS_METHOD(depthRange);
 	DBG_EXPORT JS_METHOD(disable);
+	DBG_EXPORT JS_METHOD(disablei);
 	DBG_EXPORT JS_METHOD(enable);
+	DBG_EXPORT JS_METHOD(enablei);
 	DBG_EXPORT JS_METHOD(finish);
 	DBG_EXPORT JS_METHOD(flush);
 	DBG_EXPORT JS_METHOD(frontFace);
@@ -275,6 +278,10 @@ namespace webgl {
 	DBG_EXPORT JS_METHOD(scissor);
 	DBG_EXPORT JS_METHOD(viewport);
 	DBG_EXPORT JS_METHOD(getIndexedParameter);
+
+	// Compute
+	DBG_EXPORT JS_METHOD(dispatchCompute);
+	DBG_EXPORT JS_METHOD(memoryBarrier);
 } // namespace webgl
 
 #endif /* _WEBGL_HPP_ */

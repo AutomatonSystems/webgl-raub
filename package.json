@@ -1,6 +1,7 @@
 {
 	"author": "Luis Blanco <luisblanco1337@gmail.com>",
 	"name": "webgl-raub",
+	"type": "commonjs",
 	"version": "4.1.0",
 	"description": "WebGL for Node.js",
 	"license": "MIT",

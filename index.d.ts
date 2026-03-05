@@ -139,7 +139,7 @@ declare module "webgl-raub" {
 	) => void;
 	const bufferData: (
 		target: number,
-		value: number | number[] | Float32Array | Uint16Array,
+		value: number | number[] | Float32Array | Int32Array | Uint16Array,
 		usage: number,
 		srcOffset?: number,
 		length?: number,
@@ -430,6 +430,7 @@ declare module "webgl-raub" {
 	const depthMask: (flag: boolean) => void;
 	const depthRange: (zNear: number, zFar: number) => void;
 	const disable: (id: number) => void;
+	const disablei: (id: number, index: number) => void;
 	const drawArrays: (
 		mode: number,
 		first: number,
@@ -443,6 +444,7 @@ declare module "webgl-raub" {
 	) => void;
 	const drawBuffers: (buffers: number[]) => void;
 	const enable: (id: number) => void;
+	const enablei: (id: number, index: number) => void;
 	const finish: () => void;
 	const flush: () => void;
 	const frontFace: (id: number) => void;
@@ -1157,4 +1159,15 @@ declare module "webgl-raub" {
 	const MAX_ELEMENT_INDEX: number;
 	const TEXTURE_IMMUTABLE_LEVELS: number;
 	const TIMEOUT_IGNORED: number;
+
+	// compute
+	const dispatchCompute: (
+		x: number,
+		y: number,
+		z: number
+	) => void;
+
+	const memoryBarrier: (
+		flags: number
+	) => void;
 }

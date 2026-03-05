@@ -426,8 +426,15 @@ if (!gl.__isInited) {
 	};
 	
 	const _uniformMatrix4fv = gl.uniformMatrix4fv;
-	gl.uniformMatrix4fv = (location, transpose, v) => {
-		return _uniformMatrix4fv(extractId(location), !!transpose, wrapF32(v));
+	gl.uniformMatrix4fv = (location, v, a) => {
+		try{
+			if(v === false)
+				return _uniformMatrix4fv(extractId(location), v, wrapF32(a));
+			return _uniformMatrix4fv(extractId(location), false, wrapF32(v));
+		}catch(e){
+			console.error("uniformMatrix4fv !! ", e, v);
+			console.log("uniformMatrix4fv args",location, v);
+		}
 	};
 	
 	const _uniform1ui = gl.uniform1ui;

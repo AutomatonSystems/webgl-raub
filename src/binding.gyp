@@ -12,6 +12,7 @@
 			'cpp/blend.cpp',
 			'cpp/buffers.cpp',
 			'cpp/clear.cpp',
+			'cpp/compute.cpp',
 			'cpp/draw.cpp',
 			'cpp/framebuffers.cpp',
 			'cpp/programs.cpp',

@@ -152,6 +152,26 @@ DBG_EXPORT JS_METHOD(texImage2D) { NAPI_ENV;
 	RET_UNDEFINED;
 }
 
+DBG_EXPORT JS_METHOD(texImage2DMultisample) { NAPI_ENV;
+	REQ_INT32_ARG(0, target);
+	REQ_INT32_ARG(1, samples);
+	REQ_INT32_ARG(2, internalformat);
+	REQ_INT32_ARG(3, width);
+	REQ_INT32_ARG(4, height);
+	REQ_BOOL_ARG(5, fixedsamplelocations);
+
+	glTexImage2DMultisample(
+		target,
+		samples,
+		internalformat,
+		width,
+		height,
+		fixedsamplelocations
+	);
+
+	RET_UNDEFINED;
+}
+
 DBG_EXPORT JS_METHOD(texImage3D) { NAPI_ENV;
 	REQ_INT32_ARG(0, target);
 	REQ_INT32_ARG(1, level);
