@@ -93,7 +93,7 @@ DBG_EXPORT JS_METHOD(enablei) { NAPI_ENV;
 	REQ_INT32_ARG(0, id);
 	REQ_INT32_ARG(1, index);
 	
-	glEnable(id, index);
+	glEnablei(id, index);
 	RET_UNDEFINED;
 }
 

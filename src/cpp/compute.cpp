@@ -18,7 +18,6 @@ DBG_EXPORT JS_METHOD(dispatchCompute) { NAPI_ENV;
 DBG_EXPORT JS_METHOD(memoryBarrier) { NAPI_ENV;
 	REQ_INT32_ARG(0, flags);
 	
-	
 	glMemoryBarrier(flags);
 	RET_UNDEFINED;
 }

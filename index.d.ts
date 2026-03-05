@@ -912,7 +912,6 @@ declare module "webgl-raub" {
 	const FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL: number;
 	const FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE: number;
 	const COLOR: number;
-	const COLOR_ATTACHMENT_INDEX: number;
 	const COLOR_ATTACHMENT0: number;
 	const COLOR_ATTACHMENT1: number;
 	const COLOR_ATTACHMENT2: number;
@@ -929,7 +928,6 @@ declare module "webgl-raub" {
 	const COLOR_ATTACHMENT13: number;
 	const COLOR_ATTACHMENT14: number;
 	const COLOR_ATTACHMENT15: number;
-	const DATA_ATTACHMENT_INDEX: number;
 	const DEPTH_ATTACHMENT: number;
 	const STENCIL_ATTACHMENT: number;
 	const DEPTH_STENCIL_ATTACHMENT: number;
